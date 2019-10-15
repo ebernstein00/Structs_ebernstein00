@@ -4,12 +4,12 @@
 
 
 
-int printer(struct player player){
+int printer(struct s player){
     printf("Number: %d\tName: %s\n", player.a, player.surname);
     return 1;
 }
 
-struct player modify(struct player player, int x, char name[30]){
+struct player modify(struct s player, int x, char name[30]){
     player.a = x;
     player.surname = name;
     return player;
