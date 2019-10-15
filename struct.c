@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <header.h>
 
-
+struct player example(){
+    return struct
 
 int printer(struct s player){
     printf("Number: %d\tName: %s\n", player.a, player.surname);
