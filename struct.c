@@ -11,7 +11,6 @@ struct s example(){
 
 void printer(struct s player){
     printf("Number: %d\tName: %s\n", player.a, player.surname);
-    return 1;
 }
 
 void modify(struct s* player, int x, char name[30]){
