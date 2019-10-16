@@ -11,7 +11,7 @@ struct s example(){
     struct s ans;
     struct s* ptr = &ans;
     ptr->a = rand();
-    ptr->surname = strcpy("Placeholder");
+    strcpy(ptr->surname, "Placeholder");
     return ans;
 }
 
@@ -21,5 +21,5 @@ void printer(struct s player){
 
 void modify(struct s* player, int x, char name[30]){
     player->a = x;
-    player->surname = strcpy(name);
+    strcpy(player->surname, name);
 }
