@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "header.h"
+#include <header.h>
 
 int main(){
     struct s player = example();
@@ -10,5 +10,5 @@ int main(){
     printf("\nThis can be changed using the modify() method\n");
     modify(player_ptr, 20, "Alonso");
     printer(player);
-    printf("\nThe struct now shows data for Pete Alonso from the NYM\n");
+    printf("\nThe struct now shows Pete Alonso's uniform number\n");
 }
