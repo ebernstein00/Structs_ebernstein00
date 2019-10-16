@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "header.h"
+#include <header.h>
 
 struct s example(){
     struct s ans;
-    struct s* ptr = &s;
+    struct s* ptr = &ans;
     ptr->a = rand();
     ptr->surname = rand();
     return ans;
