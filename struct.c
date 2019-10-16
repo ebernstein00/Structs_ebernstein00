@@ -11,7 +11,7 @@ struct s example(){
     struct s ans;
     struct s* ptr = &ans;
     ptr->a = rand();
-    ptr->surname = '%';
+    ptr->surname = "Placeholder";
     return ans;
 }
 
