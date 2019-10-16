@@ -1,11 +1,11 @@
 all: main.o struct.o
-  gcc -o  program main.c struct.c
+	gcc -o  program main.c struct.c
 main.o: header.h main.c struct.c
-  gcc -c main.c
+  	gcc -c main.c
 struct.o: struct.c header.h
-  gcc -c struct.c
+ 	gcc -c struct.c
 run:
-  ./program
+  	./program
 clean:
-  rm *.o
-  rm *~
+  	rm *.o
+  	rm *~
