@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "header.h"
 
+struct s {
+    int a;
+    char surname[30];
+};
+
 struct s example(){
     struct s ans;
     struct s* ptr = &ans;
