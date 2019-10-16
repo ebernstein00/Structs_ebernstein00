@@ -4,8 +4,9 @@
 
 struct s example(){
     struct s ans;
-    (*ans).a = rand();
-    (*ans).surname = rand();
+    struct s* ptr = &s;
+    ptr->a = rand();
+    ptr->surname = rand();
     return ans;
 }
 
