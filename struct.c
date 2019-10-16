@@ -9,7 +9,7 @@ struct s example(){
     return ans;
 }
 
-int printer(struct s player){
+void printer(struct s player){
     printf("Number: %d\tName: %s\n", player.a, player.surname);
     return 1;
 }
