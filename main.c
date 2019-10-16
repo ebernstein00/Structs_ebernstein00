@@ -4,7 +4,7 @@
 
 int main(){
     struct s player = example();
-    struct s player_ptr = &player;
+    struct s* player_ptr = &player;
     printf("An example of my struct is:\n");
     printer(player);
     printf("\nThis can be changed using the modify() method\n");
