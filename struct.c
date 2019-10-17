@@ -12,7 +12,8 @@ struct s {
 struct s example(){
     struct s ans;
     struct s* ptr = &ans;
-    ptr->a = srand(time(0));
+    srand(time(0));
+    ptr->a = rand();
     strcpy(ptr->surname, "Placeholder");
     return ans;
 }
