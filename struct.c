@@ -5,7 +5,7 @@
 
 struct s {
     int a;
-    char surname[30];
+    char* surname;
 };
 
 struct s example(){
@@ -20,7 +20,7 @@ void printer(struct s player){
     printf("Number: %d\tName: %s\n", player.a, player.surname);
 }
 
-void modify(struct s* player, int x, char name[30]){
+void modify(struct s* player, int x, char* name){
     player->a = x;
     strcpy(player->surname, name);
 }
