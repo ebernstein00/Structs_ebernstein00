@@ -4,7 +4,7 @@
 
 struct s {
     int a;
-    char surname[30];
+    char* surname;
 };
 
 int main(){
