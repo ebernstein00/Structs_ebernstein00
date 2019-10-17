@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 //#include "header.h"
 
 struct s {
@@ -11,7 +12,7 @@ struct s {
 struct s example(){
     struct s ans;
     struct s* ptr = &ans;
-    ptr->a = rand();
+    ptr->a = srand(time(0));
     strcpy(ptr->surname, "Placeholder");
     return ans;
 }
